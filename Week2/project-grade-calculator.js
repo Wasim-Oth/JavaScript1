@@ -1,8 +1,8 @@
 'use strict'
 
 let grade= 93;
-let scoor = "";
-var percentage = Number(grade/100).toLocaleString(undefined,{style: 'percent'}); 
+let scoor = "";    //content the grade with percentage
+let percentage = Number(grade/100).toLocaleString(undefined,{style: 'percent'});   // to change the number to percentage
     if (grade >= 90 ){
         scoor= 'You got a A ' + (percentage);
     }
