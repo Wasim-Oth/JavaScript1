@@ -23,7 +23,7 @@ let books = [
 
 
 for (let i=0; i< books.length; i++){
-    console.log (books[i]);
+    console.log (books[i]); 
     if (books[i].alreadyRead == false){
         console.log(' I still need to read ' +  books[i].title)
     }
@@ -31,4 +31,3 @@ for (let i=0; i< books.length; i++){
         console.log('I already read' + books[i].title)
     }
 };
-    
