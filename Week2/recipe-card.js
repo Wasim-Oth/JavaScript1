@@ -1,4 +1,4 @@
-'use stict'
+'use strict'
 
 let food= {};
 food = {MealName: 'maklobe' ,
@@ -6,4 +6,5 @@ food = {MealName: 'maklobe' ,
         ingredients: ['half kilo Aubergine', '1 glas rice', 'half kilo chopped meat', '1 magi' ] 
        };
 
-       console.log(food)
+       for (let i in food){
+        console.log(`${i}; ${food[i]}`);
