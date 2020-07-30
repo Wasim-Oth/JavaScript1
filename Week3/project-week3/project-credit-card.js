@@ -48,7 +48,7 @@ for ( let i = 0; i < num.length; i++){
     for ( let i in num ){
         sumNum +=parseInt(num[i]);
     };
-    if (sumNum < 16){
+    if (sumNum <= 16){
         console.log(`Invalid! The sum of ${num} should be greater than 16!`)
         resualt= false;
     }
