@@ -30,7 +30,7 @@ for ( let i = 0; i < num.length; i++){
  };
 
     if (firstNum == L){
-        console.log(`Invalid! The input ${num} should contain at least 2 different types of numbers!`)
+        return`Invalid! The input ${num} should contain at least 2 different types of numbers!`
         resualt= false;
     };
 
@@ -38,7 +38,7 @@ for ( let i = 0; i < num.length; i++){
     // 4- check if the e last number is even
     let lastIndex = num.slice(-1);
     if (lastIndex % 2 == 1){
-        console.log(`Invalid! The input ${num} should contain an odd number as last index!`)
+        return `Invalid! The input ${num} should contain an odd number as last index!`
         resualt= false;
     };
 
@@ -49,7 +49,7 @@ for ( let i = 0; i < num.length; i++){
         sumNum +=parseInt(num[i]);
     };
     if (sumNum <= 16){
-        console.log(`Invalid! The sum of ${num} should be greater than 16!`)
+        return `Invalid! The sum of ${num} should be greater than 16!`
         resualt= false;
     }
 
@@ -58,7 +58,7 @@ for ( let i = 0; i < num.length; i++){
 
 // if all the conditions are true then the value of this variable is true and it will print this message
 if (resualt === true){
-    console.log(`Success! The input ${num} is a valid credit card number!`);
+    return `Success! The input ${num} is a valid credit card number!`
 }
 
 };
